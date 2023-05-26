@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Selectors</title>
+  </head>
+
+  <body>
+    <section id="idSection">
+      <h2>ID Selector</h2>
+      <p>
+        You can select the item on the webpage using its ID. In cypress function
+        we pass the id name with hashtag (#) cy.get("#idname")
+      </p>
+   
+        <p id="exampleID">This is a dummy element with an id for example</p>
+ 
+    </section>
+    <section id="classSection">
+      <h2>Class Selector</h2>
+      <p>
+        You can select the item on the webpage using its class name. In cypress function
+        we pass the class name with dot (.) cy.get(".classname")
+      </p>
+ 
+        <p class="exampleClass"">This is a dummy element with the class name for example</p>
+ 
+    </section>
+    <section id="attributeSection">
+      <h2>Attribute Selector</h2>
+      <p>
+        You can select the item on the webpage using its attribute name. In cypress function
+        we pass the attribute cy.get("data-color=["red"]")
+      </p>
+ 
+        <p data-value="dummyText">This is a dummy element with the attribute name for example</p>
+ 
+    </section>
+    <section id="tagSection">
+       <h2>Tag name Selector</h2>
+      <p>
+        You can select the item on the webpage using its attribute name. In cypress function
+        we pass the attribute cy.get("data-color=["red"]")
+      </p>
+      <div>
+        <p>We will select this item using its tag name without any id, class or attribute</p>
+      </div>
+    </section>
+  </body>
+</html>
