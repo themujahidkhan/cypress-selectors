@@ -1,4 +1,4 @@
-describe("Selector Page ID Example", () => {
+describe("ID Selector example", () => {
   it("selects the element with the id", () => {
     cy.visit("https://ecommerce-playground.lambdatest.io/");
     
