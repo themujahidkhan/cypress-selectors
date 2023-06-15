@@ -9,7 +9,7 @@ describe("CSS Selector example", () => {
     cy.get("#input-lastname").type("Doe");
 
     // attribute selector
-    cy.get('input[type="email"]').type("john.doe@example.com");
+    cy.get('input[type="email"]').type("testingemail3@example.com");
     cy.get('input[type="tel"]').type("0123456789");
     cy.get('[name="password"]').type("password123");
     cy.get('[name="confirm"]').type("password123");
@@ -23,5 +23,9 @@ describe("CSS Selector example", () => {
 
     // Class selector
     cy.get(".btn-primary").click({ multiple: true, force: true });
+    cy.url().should(
+      "eq",
+      "https://ecommerce-playground.lambdatest.io/index.php?route=account/success"
+    );
   });
 });
